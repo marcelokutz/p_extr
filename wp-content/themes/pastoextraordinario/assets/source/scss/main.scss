@@ -1,0 +1,127 @@
+@import 'bootstrap/bootstrap-reboot.scss';
+@import 'bootstrap/bootstrap-grid.scss';
+@import 'bootstrap/bootstrap.scss';
+@import 'variables';
+@import 'fonts';
+@import 'slick';
+@import 'slick-theme';
+  
+body {
+    background-color: $white;
+    line-height: 1.5em;
+    font-weight: 300;
+    color: $normal-gray;
+    font-size: 14px;
+    @media (min-width: 1480px) {    
+        font-size: 18px;
+        line-height: 28px;        
+    }
+    b,
+    strong {
+        font-weight: 700;
+    }
+}
+h1, h2, h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+p {
+    margin-bottom: 25px;
+}
+/* Menu toggle */
+
+.menu-toggle {
+	background-color: transparent;
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #222;
+	display: none;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 800;
+	line-height: 1.5;
+	margin: 1px auto 2px;
+	padding: 1em;
+	text-shadow: none;
+}
+
+/* Display the menu toggle when JavaScript is available. */
+
+.js .menu-toggle {
+	display: block;
+}
+
+.main-navigation.toggled-on ul.nav-menu {
+	display: block;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.menu-toggle:focus {
+	outline: thin solid;
+}
+
+.menu-toggle .icon {
+	margin-right: 0.5em;
+	top: -2px;
+}
+
+.toggled-on .menu-toggle .icon-bars,
+.menu-toggle .icon-close {
+	display: none;
+}
+
+.toggled-on .menu-toggle .icon-close {
+	display: inline-block;
+}
+
+/* Dropdown Toggle */
+
+.dropdown-toggle {
+	background-color: transparent;
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #222;
+	display: block;
+	font-size: 16px;
+	right: -0.5em;
+	line-height: 1.5;
+	margin: 0 auto;
+	padding: 0.5em;
+	position: absolute;
+	text-shadow: none;
+	top: 0;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+	background: transparent;
+}
+
+.dropdown-toggle:focus {
+	outline: thin dotted;
+}
+
+.dropdown-toggle.toggled-on .icon {
+	-ms-transform: rotate(-180deg); /* IE 9 */
+	-webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+	transform: rotate(-180deg);
+}
+
+/* Scroll down arrow */
+.site-header .menu-scroll-down {
+	display: none;
+}
+
+.page-template-front-page  {
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 0;
+}
